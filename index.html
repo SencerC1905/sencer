@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <!-- #region meta kısmı kullandığımız dili tittle sayfanın başlığını gösterir head kısmına yazılır--> 
+        <meta charset="UTF-8">  
+        <title>SENCER CORUK</title>
+    </head>
+    <body> 
+        <!-- #region p kalıbı paragraflar için kullanılır içini doldurabiliriz. br kalıbı alt satır yapmamızı ve pragrafı bölmemizi sağlar. hr kalıbı ise iki paragraf arası çizgi oluşturmamızı sağlar. span kalıbı belli bir kelime veya paragrafı düzenler. b kalıbı istediğimiz aralığı kalınlaştırır. i kalıbı italik yazı u kalıbı ise altını çizer. h1----h6 büyük yazı küçük yazı  -->
+        <p>Lorem ipsum dolor <b>SENCER</b>sit amet consectetur <br>adipisicing elit. Rerum quo illum enim, sit voluptates porro laborum vero sint tempore. Fugit perferendis tempore quis saepe nam consequuntur veniam non amet asperiores!</p>
+        <hr> 
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, possimus, quidem, <i>SENCER</i>consequuntur sint quo sed quibusdam culpa tempora esse molestias quaerat at quae. Quibusdam eius odit consectetur, expedita ab error?</p>
+        <hr>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum autem recusandae voluptates,<U>SENCER</U> ipsam maiores odio repellendus veniam est fugiat obcaecati, debitis voluptas velit enim nesciunt ducimus adipisci incidunt placeat modi?</p>
+
+        <pre>
+            metin1
+
+            metin2
+
+            metin3
+        </pre>
+
+        <h1>SENCER</h1>
+        <h6>SENCER</h6>   
+
+        <!-- #region linkler için a kalıbını kullanıyoruz tırnak içine istediğimiz link ve >< arasına ise sitede gözükmesini istediğimiz şeyi yazıyoruz. "target=_blank" kullanmak daha mantıklı linke basıldığında yeni sekme açılıyor. tel ve mail ekleyebiliyoruz. site içerisinde dolaşma için ise id kalıbını kullanıyoruz ve a ile link ekliyoruz.-->
+        <a href="https://google.com">google</a>        
+        <a href="https://google.com" target="_blank">youtube</a> 
+        <br><br>
+        <a href="tel:05531815063">ARA</a>
+        <br><br>
+        <a href="#baslik">4.başlığa git</a>
+
+        <h1>Başlık1</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat laborum nostrum consequatur, at sit quis, recusandae ipsum sequi commodi repellat ipsam similique. Numquam autem eius quod accusamus minus dicta nulla!
+        Voluptatum adipisci iste cupiditate facere assumenda soluta corrupti cum ut, aliquid recusandae mollitia dolores quia explicabo sint maxime nam optio facilis itaque vel eligendi deserunt. Vero quos natus tempore libero!
+        Qui exercitationem a totam repellat repudiandae dignissimos voluptates sapiente laudantium, nisi dicta unde, necessitatibus facilis nulla, porro quaerat quis tempore dolore nostrum assumenda est officia excepturi reiciendis aliquam vel! Corporis?
+        </p>
+        <h1 id="baslik">Başlık4</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat laborum nostrum consequatur, at sit quis, recusandae ipsum sequi commodi repellat ipsam similique. Numquam autem eius quod accusamus minus dicta nulla!
+        Voluptatum adipisci iste cupiditate facere assumenda soluta corrupti cum ut, aliquid recusandae mollitia dolores quia explicabo sint maxime nam optio facilis itaque vel eligendi deserunt. Vero quos natus tempore libero!
+        Qui exercitationem a totam repellat repudiandae dignissimos voluptates sapiente laudantium, nisi dicta unde, necessitatibus facilis nulla, porro quaerat quis tempore dolore nostrum assumenda est officia excepturi reiciendis aliquam vel! Corporis?
+        </p>
+
+         <!-- #region img kalıbıyla oluşturduğumuz klasör içinden resim atabiliriz siteye. a kalıbı içerisine alarak görselden başka siteye aktarım yapabiliyoruz-->
+
+        <a href="https://google.com" target="_blank">
+            <img src="resim/gs.jpg" alt="gs" width="200" height="200"   >    
+        </a>
+       
+        <!-- #region tablo yapımı-->
+        <table border="1">
+            <tr>
+                <td>SENCER</td>
+                <td>SENCER</td>
+                <td>SENCER</td>
+            </tr>
+            <tr>
+                <td>CORUK</td>
+                <td>CORUK</td>
+                <td>CORUK</td>
+            </tr>
+        </table>
+
+
+        <ul>
+            <li>s</li>
+            <li>e</li>
+            <li>n</li>
+            <li>c</li>
+            <li>e</li>
+            <li>r</li>
+
+        </ul>
+
+        <ol>
+            <li>s</li>
+            <li>e</li>
+            <li>n</li>
+            <li>c</li>
+            <li>e</li>
+            <li>r</li>
+
+        </ol>
+
+        <dl>
+            <dt>SENCER CORUK</dt>
+            <dd>gs</dd>
+        </dl>
+        
+        
+        <!-- #region video + ses ekleme-->
+        <audio src="ses.mp3" controls></audio>
+        <video src="video.mp4" width="400" height="200" controls poster="resim/gs.jpg"></video>
+        
+        <!-- #region kutucuk oluşturma-->
+        <form>
+            <input type="text" value="test" disabled>
+        </form>
+        <!-- #region  gizli şifre bölmesi-->
+        <form>
+            <input type="password">
+        </form>
+        <!-- #region mail giriş yeri uyarı verir mail girmezsen-->
+        <form>
+            <input type="email">
+            <input type="submit" value="kaydet">
+        </form>
+       <!-- #region sayı kutucuğu yükseltip açlatılabilir-->
+        <form>
+            <input type="number">
+            <input type="submit" value="kaydet">
+        </form>
+        <!-- #region büyük yazı kutucuğu ekleme-->
+        <form>
+            <textarea></textarea>
+            <input type="submit" value="kaydet">
+        </form>
+        <!-- #region kabul ediyorum kutucuğu -->
+        <form>
+            <input type="checkbox"> kabul ediyorum
+            <input type="submit" value="kaydet">
+        </form>
+       <!-- #region cinsiyet seçimi ve tek kutucuk seçme -->
+        <form>
+        <label>
+            <input type="radio" value="Kadın" name="cinsiyet"> kadın
+        </label>
+        <label>
+            <input type="radio" value="Erkek" name="cinsiyet"> erkek
+        </label>
+                  
+            <input type="submit" value="kaydet">
+        </form>
+        <!-- #region alt alta çıkan seçim kutusu-->
+        <form>
+            <select>
+                <option>SENCER</option>
+                <option>incinaz</option>
+                <option>ömer</option>
+            </select>
+        </form>
+      
+    </body>
+    
+</html>
